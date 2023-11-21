@@ -1,6 +1,8 @@
 import com.workintech.*;
 import org.w3c.dom.ls.LSOutput;
 
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
         Bedroom bedroom = new Bedroom("bedroom",new Wall("right"),new Wall("left"),
@@ -10,6 +12,6 @@ public class Main {
                 new Carpet(3,3,PaintColor.WHITE));
 
         System.out.println(bedroom);
-        System.out.println(bedroom.);
+
     }
 }
