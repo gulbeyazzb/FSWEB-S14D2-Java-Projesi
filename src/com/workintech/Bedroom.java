@@ -1,24 +1,19 @@
 package com.workintech;
 
+import java.util.Arrays;
+
 public class Bedroom {
     private String name;
-    private Wall wall1;
-    private Wall wall2;
-    private Wall wall3;
-    private Wall wall4;
+    private Wall[] walls;
     private Ceiling ceiling;
     private Bed bed;
     private Lamp lamp;
     private Wardrobe wardrobe;
     private Carpet carpet;
 
-    public Bedroom(String name, Wall wall1, Wall wall2, Wall wall3, Wall wall4,
-                   Ceiling ceiling, Bed bed, Lamp lamp, Wardrobe wardrobe, Carpet carpet) {
+    public Bedroom(String name, Wall[] walls, Ceiling ceiling, Bed bed, Lamp lamp, Wardrobe wardrobe, Carpet carpet) {
         this.name = name;
-        this.wall1 = wall1;
-        this.wall2 = wall2;
-        this.wall3 = wall3;
-        this.wall4 = wall4;
+        this.walls = walls;
         this.ceiling = ceiling;
         this.bed = bed;
         this.lamp = lamp;
@@ -30,20 +25,8 @@ public class Bedroom {
         return name;
     }
 
-    public Wall getWall1() {
-        return wall1;
-    }
-
-    public Wall getWall2() {
-        return wall2;
-    }
-
-    public Wall getWall3() {
-        return wall3;
-    }
-
-    public Wall getWall4() {
-        return wall4;
+    public Wall[] getWalls() {
+        return walls;
     }
 
     public Ceiling getCeiling() {
@@ -71,10 +54,7 @@ public class Bedroom {
     public String toString() {
         return "Bedroom{" +
                 "name='" + name + '\'' +
-                ", wall1=" + wall1 +
-                ", wall2=" + wall2 +
-                ", wall3=" + wall3 +
-                ", wall4=" + wall4 +
+                ", walls=" + Arrays.toString(walls) +
                 ", ceiling=" + ceiling +
                 ", bed=" + bed +
                 ", lamp=" + lamp +
