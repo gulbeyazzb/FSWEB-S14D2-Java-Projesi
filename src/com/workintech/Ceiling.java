@@ -18,7 +18,7 @@ public class Ceiling {
     }
 
     public void create() {
-        System.out.println("height: " + height + ", Painted Color: " + paintedColor);
+        System.out.println("height: " + height + "m, Painted Color: " + paintedColor);
     }
 
     @Override
