@@ -1,5 +1,15 @@
+import com.workintech.*;
+import org.w3c.dom.ls.LSOutput;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Bedroom bedroom = new Bedroom("bedroom",new Wall("right"),new Wall("left"),
+                new Wall("front"),new Wall("back"),new Ceiling(6,PaintColor.RED),
+                new Bed("base",2,70,2,1),
+                new Lamp(LampType.LAMPSHADE,true,60),new Wardrobe(3,3,60),
+                new Carpet(3,3,PaintColor.WHITE));
+
+        System.out.println(bedroom);
+        System.out.println(bedroom.);
     }
 }
